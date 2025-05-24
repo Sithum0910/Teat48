@@ -18,14 +18,16 @@
         <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
       </div>
-      <button class="hamburger">
-        <i class="fas fa-bars"></i>
+      <button class="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section id="home" class="hero">
+  <section id="home" class="hero scroll-reveal">
     <div class="hero-content">
       <h1>Cakes for Every Occasion</h1>
       <p>Handcrafted with love using the finest ingredients</p>
@@ -34,7 +36,7 @@
   </section>
 
   <!-- About Section -->
-  <section id="about" class="about">
+  <section id="about" class="about scroll-reveal">
     <div class="container">
       <h2>Our Story</h2>
       <div class="about-content">
@@ -42,18 +44,9 @@
           <p>Founded in 2022 by Kashmira, Sweet Bakery brings joy through delicious, beautifully crafted cakes.</p>
           <p>We use only the finest organic ingredients sourced from local farmers whenever possible.</p>
           <div class="features">
-            <div class="feature">
-              <i class="fas fa-heart"></i>
-              <p>Made with Love</p>
-            </div>
-            <div class="feature">
-              <i class="fas fa-leaf"></i>
-              <p>Natural Ingredients</p>
-            </div>
-            <div class="feature">
-              <i class="fas fa-award"></i>
-              <p>Award Winning</p>
-            </div>
+            <div class="feature"><i class="fas fa-heart"></i><p>Made with Love</p></div>
+            <div class="feature"><i class="fas fa-leaf"></i><p>Natural Ingredients</p></div>
+            <div class="feature"><i class="fas fa-award"></i><p>Award Winning</p></div>
           </div>
         </div>
         <div class="about-image">
@@ -64,34 +57,22 @@
   </section>
 
   <!-- Gallery Section -->
-  <section id="gallery" class="gallery">
+  <section id="gallery" class="gallery scroll-reveal">
     <div class="container">
       <h2>Our Creations</h2>
       <div class="gallery-grid">
-        <div class="gallery-item">
-          <img src="https://raw.githubusercontent.com/Sithum0910/cake-1.0/refs/heads/main/images/20250522_235234.jpg" alt="Unicorn Kid Cake"/>
-        </div>
-        <div class="gallery-item">
-          <img src="https://raw.githubusercontent.com/Sithum0910/cake-1.0/refs/heads/main/images/20250522_235353.jpg" alt="BMW fan cake"/>
-        </div>
-        <div class="gallery-item">
-          <img src="https://raw.githubusercontent.com/Sithum0910/cake-1.0/refs/heads/main/images/20250522_235550.jpg" alt="Gree Royal"/>
-        </div>
-        <div class="gallery-item">
-          <img src="https://raw.githubusercontent.com/Sithum0910/cake-1.0/refs/heads/main/images/20250522_235557.jpg" alt="19 Level Up Cake"/>
-        </div>
-        <div class="gallery-item">
-          <img src="https://raw.githubusercontent.com/Sithum0910/cake-1.0/refs/heads/main/images/20250522_235808.jpg" alt="Astroman"/>
-        </div>
-        <div class="gallery-item">
-          <img src="https://raw.githubusercontent.com/Sithum0910/cake-1.0/refs/heads/main/images/20250522_235939.jpg" alt="Chocolate Land"/>
-        </div>
+        <div class="gallery-item"><img src="https://raw.githubusercontent.com/Sithum0910/cake-1.0/refs/heads/main/images/20250522_235234.jpg" alt="Unicorn Kid Cake"/></div>
+        <div class="gallery-item"><img src="https://raw.githubusercontent.com/Sithum0910/cake-1.0/refs/heads/main/images/20250522_235353.jpg" alt="BMW fan cake"/></div>
+        <div class="gallery-item"><img src="https://raw.githubusercontent.com/Sithum0910/cake-1.0/refs/heads/main/images/20250522_235550.jpg" alt="Gree Royal"/></div>
+        <div class="gallery-item"><img src="https://raw.githubusercontent.com/Sithum0910/cake-1.0/refs/heads/main/images/20250522_235557.jpg" alt="19 Level Up Cake"/></div>
+        <div class="gallery-item"><img src="https://raw.githubusercontent.com/Sithum0910/cake-1.0/refs/heads/main/images/20250522_235808.jpg" alt="Astroman"/></div>
+        <div class="gallery-item"><img src="https://raw.githubusercontent.com/Sithum0910/cake-1.0/refs/heads/main/images/20250522_235939.jpg" alt="Chocolate Land"/></div>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="contact">
+  <section id="contact" class="contact scroll-reveal">
     <div class="container">
       <h2>Get in Touch</h2>
       <div class="contact-content">
@@ -106,21 +87,11 @@
             <a href="#"><i class="fab fa-whatsapp"></i></a>
           </div>
         </div>
-
-        <!-- Contact Form -->
         <form action="https://formspree.io/f/xpwdejng" method="POST" class="contact-form">
-          <div class="form-group">
-            <input type="text" name="name" placeholder="Full Name" required>
-          </div>
-          <div class="form-group">
-            <input type="email" name="email" placeholder="Email Address" required>
-          </div>
-          <div class="form-group">
-            <input type="tel" name="phone" placeholder="Phone (optional)">
-          </div>
-          <div class="form-group">
-            <textarea name="message" placeholder="Type your message..." required></textarea>
-          </div>
+          <div class="form-group"><input type="text" name="name" placeholder="Full Name" required></div>
+          <div class="form-group"><input type="email" name="email" placeholder="Email Address" required></div>
+          <div class="form-group"><input type="tel" name="phone" placeholder="Phone (optional)"></div>
+          <div class="form-group"><textarea name="message" placeholder="Type your message..." required></textarea></div>
           <button type="submit" class="btn">Send Message</button>
         </form>
       </div>
@@ -135,6 +106,5 @@
   </footer>
 
   <script src="script.js"></script>
-  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
